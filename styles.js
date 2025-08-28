@@ -1,7 +1,6 @@
 //  increment heart number
 const heartIcon = document.getElementsByClassName("heart-icon")  
  let convoheart = parseInt(document.getElementById("heart").innerText)
-     //console.log(heartIcon)
 
      for(let icon of heartIcon){
         icon.addEventListener("click",function(){
@@ -14,7 +13,7 @@ const heartIcon = document.getElementsByClassName("heart-icon")
    //   call functionality
 const calls = document.getElementsByClassName("call-btn")
 let coinNum =parseInt(document.getElementById("coin").innerText)
-
+ let cart_container = document.getElementById("cart-container")
 for(let call of calls){
    call.addEventListener("click",function(){
    
@@ -30,7 +29,6 @@ if(coinNum < 0){
    else{
       alert(`calling ${nam}  ${num}...`)
         document.getElementById("coin").innerText = coinNum
-       let cart_container = document.getElementById("cart-container")
       const div = document.createElement("div")
       div.innerHTML = ` 
       <div class="flex justify-between  items-center bg-[#f4f5f4] rounded-2xl p-6 mb-4">
@@ -42,8 +40,10 @@ if(coinNum < 0){
    })
  
 }
-    
-
+   //  clear funtionality
+document.getElementById("clear").addEventListener("click",function(){
+    cart_container.innerHTML = ""
+})
      
     
 

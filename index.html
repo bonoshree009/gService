@@ -16,8 +16,8 @@
                  <h1 class="font-bold text-[#006747] text-2xl">Emergency <br> Services</h1>
            </div>
             <div class=" flex flex-col md:flex-row gap-2">
-                <button  id="heart-btn" class="btn  btn-soft border-0 bg-[#41ff6b1a] rounded-4xl p-3 font-bold "><span id="heart"> 0</span> <img src="assets/heart.png" alt="" class =" h-7 w-7"></button>
-                <button class="btn btn-soft bg-[#41ff6b1a] rounded-4xl py-3 px-5 font-bold">100 <img src="assets/coin.png" alt="" class="h-6 w-6"></button>
+                <button  class="btn  btn-soft border-0 bg-[#41ff6b1a] rounded-4xl p-3 font-bold "><span id="heart"> 0</span> <img src="assets/heart.png" alt="" class =" h-7 w-7" id="heart-img" ></button>
+                <button class="btn btn-soft bg-[#41ff6b1a] rounded-4xl py-3 px-5 font-bold"><span id="coin">100 </span><img src="assets/coin.png" alt="" class="h-6 w-6"></button>
                 <button class="btn btn-soft bg-[#00a63e] rounded-4xl py-3 px-9 text-amber-50">2 copy</button>
 
             </div>
@@ -36,7 +36,7 @@
     <div class=" md:col-span-9 ">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
               <!-- one grid   -->
-               <div class="bg-white md:p-8 rounded-2xl">
+               <div class="bg-white md:p-8 rounded-2xl cart" id="One">
                 <div class="flex justify-between items-center">
                     <div class="bg-[#ffe3e2] p-3.5 rounded-2xl"><img src="assets/emergency.png" alt="" class="h-8 w-8"></div>
                       <i class="fa-regular fa-heart heart-icon"></i></div>
@@ -47,11 +47,11 @@
 
                 <div>
                  <button class="btn btn-soft bg-white rounded-2xl py-3 px-12 text-[#9b9e9b]"><i class="fa-regular fa-copy"></i>Copy</button>
-                <button class="btn btn-soft bg-[#00a63e] rounded-2xl py-3 px-12 text-amber-50"><i class="fa-solid fa-phone"></i> Call</button>
+                <button class="btn btn-soft bg-[#00a63e] rounded-2xl py-3 px-12 text-amber-50 call-btn"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
              </div> 
                <!-- two grid -->
-                  <div class="bg-white p-8 rounded-2xl">
+                  <div class="bg-white p-8 rounded-2xl cart" id="Two">
                 <div class="flex justify-between items-center">
                     <div class="bg-[#cde6f3] p-3.5 rounded-2xl"><img src="assets/police.png" alt="" class="h-8 w-8"></div>
                       <i class="fa-regular fa-heart heart-icon"></i></div>
@@ -62,7 +62,7 @@
 
                 <div>
                  <button class="btn btn-soft bg-white rounded-2xl py-3 px-12 text-[#9b9e9b]"><i class="fa-regular fa-copy"></i>Copy</button>
-                <button class="btn btn-soft bg-[#00a63e] rounded-2xl py-3 px-12 text-amber-50"><i class="fa-solid fa-phone"></i> Call</button>
+                <button class="btn btn-soft bg-[#00a63e] rounded-2xl py-3 px-12 text-amber-50  call-btn"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
              </div> 
              <!-- three  -->
@@ -77,7 +77,7 @@
 
                 <div>
                  <button class="btn btn-soft bg-white rounded-2xl py-3 px-12 text-[#9b9e9b]"><i class="fa-regular fa-copy"></i>Copy</button>
-                <button class="btn btn-soft bg-[#00a63e] rounded-2xl py-3 px-12 text-amber-50"><i class="fa-solid fa-phone"></i> Call</button>
+                <button class="btn btn-soft bg-[#00a63e] rounded-2xl py-3 px-12 text-amber-50 call-btn"><i class="fa-solid fa-phone"></i> Call</button>
                 </div>
              </div> 
               <!-- four -->
@@ -179,11 +179,12 @@
                     <h1 class="font-bold"><i class="fa-regular fa-clock"></i> Call History</h1>
                     <button class="btn btn-soft bg-[#00a63e] rounded-4xl py-3 px-9 text-amber-50">clear</button>
                 </div>
-                <div>
-                    <div class="flex justify-between items-center bg-[#f4f5f4] rounded-2xl p-6">
+                <div id="cart-container">
+                    <div class="flex justify-between  items-center bg-[#f4f5f4] rounded-2xl p-6 mb-4">
                         <div><h1 class="font-bold">জাতীয় জরুরি সেবা</h1><p>999</p></div>
                        <p>10:10:10AM</p>
                     </div>
+                    
                 </div>
                 </div>
              </div>

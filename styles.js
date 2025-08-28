@@ -52,12 +52,11 @@ let copyCount = parseInt( document.getElementById("copy").innerText)
 let allcopy = document.getElementsByClassName("copy-btn")
 for(let one of allcopy){
    one.addEventListener("click",function(){
-      alert("copyed")
       copyCount = copyCount + 1
-      document.getElementById("copy").innerText = copyCount
-
       let grandparent = one.parentElement.parentElement; 
       let num = grandparent.children[3].innerText;
+       document.getElementById("copy").innerText = copyCount
+      alert(` নম্বরটি কপি হয়েছে ${num}`)
       navigator.clipboard.writeText(num);
    })
 }

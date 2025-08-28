@@ -1,123 +1,33 @@
-## WELCOME TO ( সহজ সরল সিম্পল ) ASSIGNMENT-005
-
-### 📅 Deadline For 60 marks: 29th August, 2025 (11:59 pm ⏱️)
-
-### 📅 No Deadline For 50 marks
-
-### 📅 Deadline For 30 marks: Any time after 29th August.
-
----
-
-## ✅ Main Requirements (50 Marks)
-
-### 1. Navbar
-
-- **Website name & logo** on the left as Figma
-- **Heart icon, coin count (default-100), and Copy Count** on the right as Figma
-
----
-
-### 2. Hero Section
-
-- **Background Gradient** in the Whole Section
-- **A Relevant Logo** at the top-center
-- **Section Title** in the center
-- **A Relevant Slogan** in the bottom Center
-
----
-
-### 2. Main Section
-
-This Section will have layout as figma
-
-<table border=1 width="100%" cellpadding="50">
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
- </tr>
- <tr>
-    <td colspan=9 >Card Section</td>
-    <td colspan=3>History Section</td>
- </tr>
-</table>
-
-### Emergency Hotline Section
-
-- **Show Minimum 6 cards**. Each card will contain:
-  - Icon or Image
-  - Relevant Name
-  - Relevant Name in English
-  - Hotline number for calling
-  - Category Badge
-  - 💗 icon at left
-  - **2 buttons** at the bottom: Copy and Call with icons as Figma
-
-### History Section
-
-- **A white Background** in the whole section
-- **History Title with icon** at the top-left as Figma
-- **Clear History Button** at the top-right as Figma
-
----
-
-### 3. Responsiveness (5 Marks)
-
-- Website should be fully **responsive for mobile devices** (implementation up to you)
-
----
-
-## Functionalities
-
-### 4. Heart Icons
-
-- Clicking on the 💗 **heart icon** of any card will increase the count in the Navbar
-
----
-
-### 5. Call Buttons
-
-- On clicking a card's **Call Button**, following actions will happen:
-  - Show an **alert** with a message including the service name and number
-  - Each call will **cut 20 coins**. Reduce Coin after each click.
-  - If coins are less than 20, show a relevant alert and terminate the process.
-  - Add this service into the **Call History section** with:
-    - Service name
-    - Service number
-
----
-
-### 5. Call History Section
-
-- Show all called services with name & number. This will empty initially. when call button clicked it will filled dynamically.
-- A **Clear History button** on the right
-- Clicking this button will remove all data from call history
-
----
-
-## Create Readme
-
-You have to create a `Readme.md` file. and write down following questions. Dont Try to copy paste from AI Tools. Just write what you know about these. If you don't know , then search , learn , understand and then write.
-
-### 6. Answer the following questions clearly:
-
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
+
+ans: getElementById:it returns single element with specified id.
+getElementsByClassName :it returns HTMLCollection(like array bt not array)
+querySelector:it returns the first element that matches the css selector,
+querySelectorAll:it returns all the elements that matches the css selector
+
+
 2. How do you **create and insert a new element into the DOM**?
+
+create: document.createElement(tagName)
+set attribute: element.innertext
+insert into the dom:appendChild
+
 3. What is **Event Bubbling** and how does it work?
+event bubling is the proccess where an event starts at the innermost terget and element and propagates to its parents and then grandparents and so on until it reaches the document.
+
 4. What is **Event Delegation** in JavaScript? Why is it useful?
+Event Delegation is technique where instead of attaching event listenser to multiple child elements we attach one lisner to their common parents.
+
+its use full:
+1.fewer lisner use
+2.less memory
+3.clear code
+
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
----
+ans:preventDefault(): stops the default browser behaviour of an element.does not stop the propagation or bubbling
 
+stopPropagation():prevent the event from propagating
 ## 🧪 Challenges Part (10 Marks)
 
 - On clicking the **Copy button**, show an alert and **increase the copy count** (3 Marks)

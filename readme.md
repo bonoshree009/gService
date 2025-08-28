@@ -1,7 +1,7 @@
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
 
 ans: getElementById:it returns single element with specified id.
-getElementsByClassName :it returns HTMLCollection(like array bt not array)
+getElementsByClassName :it returns HTMLCollection(like array bt not array).
 querySelector:it returns the first element that matches the css selector,
 querySelectorAll:it returns all the elements that matches the css selector
 

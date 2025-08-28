@@ -44,9 +44,23 @@ if(coinNum < 0){
 document.getElementById("clear").addEventListener("click",function(){
     cart_container.innerHTML = ""
 })
-     
     
+//copy functionality
 
+let copyCount = parseInt( document.getElementById("copy").innerText)
+    
+let allcopy = document.getElementsByClassName("copy-btn")
+for(let one of allcopy){
+   one.addEventListener("click",function(){
+      alert("copyed")
+      copyCount = copyCount + 1
+      document.getElementById("copy").innerText = copyCount
+
+      let grandparent = one.parentElement.parentElement; 
+      let num = grandparent.children[3].innerText;
+      navigator.clipboard.writeText(num);
+   })
+}
 
 
 
